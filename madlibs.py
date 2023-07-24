@@ -1,4 +1,5 @@
 def spiderman_madlib():
+    # Get user input for various parts of the madlib story
     adj1 = input("Adjective: ")
     adj2 = input("Adjective: ")
     adj3 = input("Adjective: ")
@@ -15,6 +16,7 @@ def spiderman_madlib():
     spider_verb = input("Verb (related to spiders): ")
     place = input("Place: ")
 
+    # Construct the madlib story using the user-provided words
     madlib = f"Swinging through the {place} as {adj1} as a spider, {noun1}, also known as Spider-Man, \
 uses his {adj2} {noun2} to {verb} crime and protect the innocent. With his {adj3} spider-like senses, he can \
 detect danger from miles away, making him the {adj4} defender of {place}.\n\
@@ -26,7 +28,9 @@ The final showdown took place atop a towering {noun6}, and after an intense batt
 {verb_past2} the {noun3}, foiling his evil scheme and saving the day once again.\n\
 With great power comes great responsibility, and Spider-Man continues to be the {adj4} hero that inspires us all."
 
+    # Display the completed madlib story to the user
     print(madlib)
 
 if __name__ == '__main__':
+    # Execute the spiderman_madlib function when the script is run
     spiderman_madlib()
