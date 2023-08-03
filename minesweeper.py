@@ -1,4 +1,3 @@
-# Import required libraries
 import random
 import re
 
@@ -113,6 +112,7 @@ def play(dim_size=10, num_bombs=10):
     # Continue playing until the game is over or the player wins
     while len(board.dug) < board.dim_size ** 2 - num_bombs:
         print(board)
+
         # Ask the player for a location to dig
         user_input = re.split(',(\\s)*', input("Where would you like to dig? Input as row,col: "))
         row, col = int(user_input[0]), int(user_input[-1])
